@@ -24,7 +24,6 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        error_log($request);
         $product = new Product();
         $product->product_code = $request->product_code;
         $product->product_name = $request->product_name;
